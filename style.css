@@ -1,5 +1,6 @@
 :root {
     --header-height-mobile: 334px;
+    --header-height-567px: 200.4px;
     --footer-height-mobile: 75px;
 }
 *{
@@ -90,7 +91,8 @@ html {
 }
 .main {
     display: grid;
-    background: linear-gradient(40deg, #414142 55%, #6b6b6b ); 
+    /* background: linear-gradient(40deg, #414142 55%, #6b6b6b );  */
+    background: linear-gradient(40deg, #8e8e8f 55%, #ebeaea ); 
 }
 .main-container {
     display: grid;
@@ -120,11 +122,12 @@ img.mat {
 .intro {
     display: flex;
     align-self: flex-end;
+    justify-content: center;
     grid-area: intro;
     color: white;
     text-align: center;
     padding: 0 5px 15px 15px;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 /*-------------------------------*/
@@ -155,18 +158,20 @@ img.cat {
 }
 .text2 {
     display: flex;
-    align-self: flex-end
-    ;
+    align-self: flex-end;
+    justify-content: center;
     grid-area: intro;
     color: white;
     text-align: center;
     padding: 0 5px 15px 15px;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 .main2 {
     display: grid;
-    background: linear-gradient(40deg, #8e8e8f 55%, #ebeaea ); 
+    /* background: linear-gradient(40deg, #8e8e8f 55%, #ebeaea );  */
+    background: linear-gradient(40deg, #414142 55%, #6b6b6b ); 
+
 }
 /*---------------------------------*/
 .footer {
@@ -227,4 +232,24 @@ img.cat {
     justify-content: center;
     font-size: 1rem;
     font-weight: bold;
+}
+@media ( min-width: 567px) {
+    .hero {
+        display: grid;
+        grid-template-columns: minmax(320px, 100%);
+        height: var(--header-height-567px);   
+    }
+    .hero-container {
+        
+        grid-template-columns: 60% 40% ;
+       
+        height: var(--header-height-567px);
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: "firma home " 
+                            " firma  cams"
+                            "firma info"
+                            "firma envelope "
+                            
+                           ;                      
+    }
 }
