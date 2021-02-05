@@ -118,6 +118,8 @@ img.mat {
 	
 }
 .intro {
+    display: flex;
+    align-self: flex-end;
     grid-area: intro;
     color: white;
     text-align: center;
@@ -152,6 +154,9 @@ img.cat {
 	
 }
 .text2 {
+    display: flex;
+    align-self: flex-end
+    ;
     grid-area: intro;
     color: white;
     text-align: center;
