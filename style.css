@@ -1,0 +1,225 @@
+:root {
+    --header-height-mobile: 334px;
+    --footer-height-mobile: 75px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero {
+    display: grid;
+    grid-template-columns: minmax(320px, 750px);
+    height: var(--header-height-mobile);   
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    width: 100%;
+    height: var(--header-height-mobile);
+    grid-template-rows: 60% 20% 20%;
+    grid-template-areas: "firma firma" 
+                        " home cams "
+                        "info envelope"
+                       ;                      
+}
+.firma {
+    grid-area: firma;
+    width: 100%;
+    height: auto;
+     background: linear-gradient(40deg, #414142 55%, #6b6b6b ); 
+    
+
+ 
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.firma img{
+    max-width: 95%;
+    justify-self: center;
+    
+    
+}   
+.home {
+    grid-area: home; 
+    background-position: center;
+    text-align: center; 
+    background-color: white;  
+}
+.home img {
+    max-width: 33%;
+    height: 97%;
+}
+.cams {
+    grid-area: cams;  
+    background-position: center;
+    text-align: center;   
+    background-color: #E1A131;  
+}
+.cams img {
+    max-width: 33%;
+    height: 97%;  
+}
+.info {
+    grid-area: info;
+    background-position: center;
+    text-align: center;    
+    background-color: #F0AB35; 
+}
+.info img {
+    max-width: 33%;
+    height: 93%;
+    align-self: center;
+    padding-top: 3px;
+}
+.envelope {
+    grid-area: envelope;
+    background-position: center;
+    text-align: center;  
+    background-color: #FFB638; 
+}
+.envelope img {
+    max-width: 33%;
+    height: 100%;
+}
+.main {
+    display: grid;
+    background: linear-gradient(40deg, #414142 55%, #6b6b6b ); 
+}
+.main-container {
+    display: grid;
+    height:max-content;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "bicycle"
+                          "intro";
+    
+}
+.man-in-bicycle {
+    grid-area: bicycle;
+    justify-self: center;
+    
+    
+}
+img.mat {
+	box-sizing: border-box;
+	width: 100%; height: auto;
+	display: block;
+	margin: 4rem auto;
+	padding: 10%;
+	background: white;
+	border: 8px solid #333;
+	
+}
+.intro {
+    grid-area: intro;
+    color: white;
+    text-align: center;
+    padding: 0 5px 15px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+/*-------------------------------*/
+.main-container2 {
+    display: grid;
+    height:max-content;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "bicycle"
+                          "intro";
+    
+}
+.next-photo {
+    grid-area: bicycle;
+    justify-self: center;
+    
+    
+}
+img.cat {
+	box-sizing: border-box;
+	width: 100%; height: auto;
+	display: block;
+	margin: 4rem auto;
+	padding: 10%;
+	background: white;
+	border: 8px solid #333;
+	
+}
+.text2 {
+    grid-area: intro;
+    color: white;
+    text-align: center;
+    padding: 0 5px 15px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.main2 {
+    display: grid;
+    background: linear-gradient(40deg, #8e8e8f 55%, #ebeaea ); 
+}
+/*---------------------------------*/
+.footer {
+    display: grid;
+   
+
+}
+.footer-container {
+    display: grid;
+    width: 100%;
+    height: var(--footer-height-mobile);
+    background: linear-gradient(40deg,#F0AB35 55%, #FFB638 ); 
+    grid-template-columns: 70%, 15%, 15% ;
+    grid-template-rows: 50%, 50%;
+    grid-template-areas: "medellin insta plays "
+                          "david insta plays";
+}
+.medellin {
+    grid-area: medellin;
+    align-items: center;
+}
+.david  {
+    grid-area: david;
+}
+.insta {
+    grid-area: insta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;;
+    
+}
+.insta img {
+    height: 60px;
+   
+}
+.plays { 
+    grid-area: plays;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.plays img {
+    max-height: 60px;
+}
+.footer-container .david {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footer-container .medellin {
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
