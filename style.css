@@ -11,7 +11,7 @@
 }
 html {
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .hero {
     display: grid;
@@ -28,6 +28,7 @@ html {
                         " home cams "
                         "info envelope"
                        ;                      
+                     
 }
 .firma {
     grid-area: firma;
@@ -63,6 +64,9 @@ html {
     text-align: center;   
     background-color: #E1A131;  
 }
+ .cams:hover{
+    background-color:#bd8526;
+} 
 .cams img {
     max-width: 33%;
     height: 97%;  
@@ -73,11 +77,14 @@ html {
     text-align: center;    
     background-color: #F0AB35; 
 }
+.info:hover {
+    background-color: #dd971e; 
+}
 .info img {
-    max-width: 33%;
-    height: 93%;
+    width: 60px;
+    height: 100%;
     align-self: center;
-    padding-top: 3px;
+    padding: 8px 0 6px 0;
 }
 .envelope {
     grid-area: envelope;
@@ -85,10 +92,15 @@ html {
     text-align: center;  
     background-color: #FFB638; 
 }
+.envelope:hover{
+    background-color: #f3a217; 
+}
 .envelope img {
     max-width: 33%;
     height: 100%;
+    padding: 12px 0 12px 0;
 }
+/*--------------------------------------------------------------*/
 .main {
     display: grid;
     /* background: linear-gradient(40deg, #414142 55%, #6b6b6b );  */
@@ -184,10 +196,10 @@ img.cat {
     width: 100%;
     height: var(--footer-height-mobile);
     background: linear-gradient(40deg,#F0AB35 55%, #FFB638 ); 
-    grid-template-columns: 70%, 15%, 15% ;
+    grid-template-columns: 70%, 10%, 10%, 10% ;
     grid-template-rows: 50%, 50%;
-    grid-template-areas: "medellin insta plays "
-                          "david insta plays";
+    grid-template-areas: "medellin insta soundCloud plays "
+                          "david insta soundCloud plays";
 }
 .medellin {
     grid-area: medellin;
@@ -217,6 +229,17 @@ img.cat {
    
 }
 .plays img {
+    max-height: 60px;
+}
+.soundCloud { 
+    grid-area: soundCloud;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.soundCloud img {
     max-height: 60px;
 }
 .footer-container .david {
@@ -252,4 +275,126 @@ img.cat {
                             
                            ;                      
     }
+    .main-container {
+        display: grid;
+        height:max-content;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: "bicycle intro";
+    }
+    .intro {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        grid-area: intro;
+        color: white;
+        text-align: center;
+        padding: 15px 80px 15px 15px;
+        font-size: 2rem;
+        font-weight: bold;   
+    }
+    .main-container2 {
+        display: grid;
+        height:max-content;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: " intro bicycle";
+    }    
+    .text2 {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        grid-area: intro;
+        color: white;
+        text-align: center;
+        padding: 15px 15px 15px 30px;
+        font-size: 2rem;
+        font-weight: bold;
+    }    
+    .info img {
+        width:45px;
+        height: 100%;
+        padding: 6px 0 4px 0;
+        
+        
+    }
+    
+    .envelope img {
+        max-width: 33%;
+        
+        padding: 10px 0 6px 0;
+    } 
+}
+@media ( min-width: 1015px) {
+     .hero-container {
+        
+        grid-template-columns: 60% 20% 20% ;
+       
+        height: var(--header-height-567px);
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "firma home cams " 
+                            " firma  info envelope"
+                           ;                      
+    }
+    .info img {
+        width: 70px;
+        padding: 15px 0 15px 0;
+      
+    }
+    
+    .envelope img {
+        width:  80px;
+        
+        padding: 20px 0 20px 0;
+    }
+    .home img {
+        padding: 8px 0 8px 0;
+        }
+    .cams img {
+        padding: 10px 0 10px 0;
+    }    
+}
+@media ( min-width: 1275px) {
+    .hero-container {
+       
+       grid-template-columns: 60% 10% 10% 10% 10% ;
+      
+       height: var(--header-height-567px);
+       grid-template-rows: 100%;
+       grid-template-areas: "firma home cams info envelope " 
+                          ;                      
+   }
+   .home{
+    min-height: 200.4px;
+    padding-top: 50px;
+   }
+   .home img {
+    max-width: 82.5px;
+    height: 97.2px;
+   }
+   .cams{
+       min-height: 200.4px;
+       padding-top: 50px;
+   }
+   .cams img {
+    max-width: 82.5px;
+    height: 97.2px;
+   }
+   .info{
+    min-height: 200.4px;
+    padding-top: 53px;
+   }
+   .info img {
+    width: 78px;
+    height: 95px;
+   }
+   .envelope{
+    min-height: 200.4px;
+    padding-top: 55px;
+   }
+   .envelope img {
+    max-width: 82.5px;
+    height: 95px;
+   }
+     
 }
