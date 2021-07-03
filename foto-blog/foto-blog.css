@@ -1,0 +1,410 @@
+:root {
+    --header-height-mobile: 334px;
+    --header-height-567px: 200.4px;
+    --footer-height-mobile: 75px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.hero {
+    display: grid;
+    grid-template-columns: minmax(320px, 750px);
+    height: var(--header-height-mobile);   
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    width: 100%;
+    height: var(--header-height-mobile);
+    grid-template-rows: 60% 20% 20%;
+    grid-template-areas: "firma firma" 
+                        " home cams "
+                        "info envelope"
+                       ;                      
+}
+.firma {
+    grid-area: firma;
+    width: 100%;
+    height: auto;
+     background: linear-gradient(40deg, #414142 55%, #6b6b6b ); 
+    
+
+ 
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.firma img{
+    max-width: 95%;
+    justify-self: center;
+    
+    
+}   
+.home {
+    grid-area: home; 
+    background-position: center;
+    text-align: center; 
+    background-color: #FFB638;  
+}
+.home:hover{
+    background-color: #f3a217;
+}
+.home img {
+    max-width: 33%;
+    height: 97%;
+}
+.cams {
+    grid-area: cams;  
+    background-position: center;
+    text-align: center;   
+    background-color: white;  
+}
+.cams img {
+    max-width: 33%;
+    height: 97%;  
+}
+.info {
+    grid-area: info;
+    background-position: center;
+    text-align: center;    
+    background-color: #F0AB35; 
+}
+.info:hover {
+    background-color: #dd971e;
+}
+.info img {
+    width: 60px;
+    height: 100%;
+    align-self: center;
+    padding: 8px 0 6px 0;
+}
+.envelope {
+    grid-area: envelope;
+    background-position: center;
+    text-align: center;  
+    background-color: #FFB638; 
+}
+.envelope:hover{
+    background-color: #f3a217; 
+}
+.envelope img {
+    max-width: 33%;
+    height: 100%;
+    padding: 12px 0 12px 0;
+}
+/*---------------*/
+.main-container{
+    display: grid;
+    grid-template-columns: 100% ;
+    width: 100%;
+    height:auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-areas: "street-photography"
+                          "cuba"
+                           "argentina"
+                           "france"
+                           "perus"
+                           "colombia"
+                           "nude";
+                          
+    background: linear-gradient(40deg, #8e8e8f 40%, #ebeaea );                        
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100% ;
+    
+    height:auto;
+    grid-template-rows: 1fr 3fr 1fr ;
+    grid-template-areas: "h2"
+                         "img"
+                         "button-more";
+}
+.h2 {
+    grid-area: h2;
+    align-self: flex-end ;
+    margin: 10px;
+}
+.img {
+    grid-area: img;
+}
+
+.button-more{
+    grid-area: button-more;
+    border: solid 1px #FFB638;
+    padding: 10px 20px;
+    margin: 0px 100px;
+    font-size: 1.2rem;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+img.img {
+	box-sizing: border-box;
+	width: 260px;
+    height: auto;
+	display: block;
+	padding: 2%;
+	background: white;
+	/* border: 1px solid #333; */
+    
+}   
+.street-photography {
+    grid-area: street-photography;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+} 
+ .cuba {
+    grid-area: cuba;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.argentina {
+    grid-area: argentina;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.france {
+    grid-area: france;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.perus {
+    grid-area: perus;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.colombia {
+    grid-area: colombia;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.nude {
+    grid-area: nude;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------*/
+.footer {
+    display: grid;
+   
+
+}
+.footer-container {
+    display: grid;
+    width: 100%;
+    height: var(--footer-height-mobile);
+    background: linear-gradient(40deg,#F0AB35 55%, #FFB638 ); 
+    grid-template-columns: 70%, 10%, 10%, 10% ;
+    grid-template-rows: 50%, 50%;
+    grid-template-areas: "medellin insta soundCloud plays "
+                          "david insta soundCloud plays";
+}
+.medellin {
+    grid-area: medellin;
+    align-items: center;
+}
+.david  {
+    grid-area: david;
+}
+.insta {
+    grid-area: insta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;;
+    
+}
+.insta img {
+    height: 60px;
+   
+}
+.plays { 
+    grid-area: plays;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.plays img {
+    max-height: 60px;
+}
+.soundCloud { 
+    grid-area: soundCloud;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.soundCloud img {
+    max-height: 60px;
+}
+.footer-container .david {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footer-container .medellin {
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+@media ( min-width: 567px) {
+    .hero {
+        display: grid;
+        grid-template-columns: minmax(320px, 100%);
+        height: var(--header-height-567px);   
+    }
+    .hero-container {
+        
+        grid-template-columns: 60% 40% ;
+       
+        height: var(--header-height-567px);
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: "firma home " 
+                            " firma  cams"
+                            "firma info"
+                            "firma envelope "
+                            
+                           ;                      
+    }
+    .main-container{
+        grid-template-columns: 50% 50% ;
+        grid-template-rows:  1fr 1fr 1fr 1.5fr;
+        grid-template-areas: "street-photography cuba"
+                             "argentina france"
+                             "perus colombia"
+                             "nude nude";
+    }
+    .info img {
+        width:45px;
+        height: 100%;
+        padding: 6px 0 4px 0;
+        
+        
+    }
+    
+    .envelope img {
+        max-width: 33%;
+        
+        padding: 10px 0 6px 0;
+    } 
+    
+}
+@media ( min-width: 1015px) {
+    .hero-container {
+       
+       grid-template-columns: 60% 20% 20% ;
+      
+       height: var(--header-height-567px);
+       grid-template-rows: 50% 50%;
+       grid-template-areas: "firma home cams " 
+                            " firma  info envelope";                      
+   }
+   .main-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:   1fr 1fr 1.5fr ;
+        grid-template-areas: "street-photography cuba argentina "
+                             "france perus colombia"
+                             "nude nude nude ";
+    }
+    .info img {
+        width: 70px;
+        padding: 15px 0 15px 0;
+      
+    }
+    
+    .envelope img {
+        width:  80px;
+        
+        padding: 20px 0 20px 0;
+    }
+    .home img {
+        padding: 8px 0 8px 0;
+        }
+    .cams img {
+        padding: 10px 0 10px 0;
+    }  
+    .argent{
+        height: 330.44px;
+        width:280.44px;
+    }
+    .argent img{
+       justify-self:left;
+       align-self: center;
+       
+       
+    }
+    .argent h2{
+        justify-self: left;
+        padding-left: 25px;
+        
+     }
+}
+@media ( min-width: 1275px) {
+   .hero-container {
+      
+      grid-template-columns: 60% 10% 10% 10% 10% ;
+     
+      height: var(--header-height-567px);
+      grid-template-rows: 100%;
+      grid-template-areas: "firma home cams info envelope " 
+                         ;                      
+  }
+  .home{
+    min-height: 200.4px;
+    padding-top: 50px;
+   }
+   .home img {
+    max-width: 82.5px;
+    height: 97.2px;
+   }
+   .cams{
+       min-height: 200.4px;
+       padding-top: 50px;
+   }
+   .cams img {
+    max-width: 82.5px;
+    height: 97.2px;
+   }
+   .info{
+    min-height: 200.4px;
+    padding-top: 53px;
+   }
+   .info img {
+    width: 78px;
+    height: 95px;
+   }
+   .envelope{
+    min-height: 200.4px;
+    padding-top: 55px;
+   }
+   .envelope img {
+    max-width: 82.5px;
+    height: 95px;
+   }
+    
+}

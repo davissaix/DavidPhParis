@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+
+  
+<link rel="stylesheet" href="/formular/formular.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  </head>
+
+
+<body>  
+    <header class="hero">
+        <div class="hero-container">
+            <div class="firma">   
+                    <img src="/assets/davidPhWhite.png" alt="firma">
+            </div>
+            <div class="home">
+                <a href="/index.html">
+                    <img src="/assets/hominimal.png" alt="">
+                </a>
+            </div>
+            <div class="cams">
+                <a href="/foto-blog/foto-blog.html"> 
+                    <img src="/assets/cams.png" alt="">
+                </a>   
+            </div>
+            <div class="info">
+                <a href="/info/info.html">
+                    <img src="/assets/info.png" alt="">
+                </a>   
+            </div>
+            <div class="envelope">
+                <a href="/formular/formular.html">
+                    <img src="/assets/enve.png" alt="">
+                </a>
+            </div>
+
+
+        </div>
+    </header> 
+  
+  
+  <main>
+    <div class="contact_form">
+
+        <div class="formulario">      
+          <h1>Email me</h1>
+            <h4>Email page in progress. <br>For prints or anything else, please contact me at davissaix@gmail.com</h4>
+    
+    
+              <form action="submeter-formulario.php" method="post">       
+    
+                
+                    <p>
+                      <label for="nombre" class="colocar_nombre">Name
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="type your name">
+                    </p>
+                  
+                    <p>
+                      <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="type your email">
+                    </p>
+                
+                    <p>
+                      <label for="telefone" class="colocar_telefono">Tel
+                      </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="type your telephone number">
+                    </p>    
+                    
+                  
+                    <p>
+                      <label for="asunto" class="colocar_asunto">Subject
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="type your subject">
+                    </p>    
+                  
+                    <p>
+                      <label for="mensaje" class="colocar_mensaje">Message
+                        <span class="obligatorio">*</span>
+                      </label>                     
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="leave a comment..."></textarea> 
+                                    </p>                    
+                  
+                    <button type="submit" name="enviar_formulario" id="enviar"><p>Send</p></button>
+    
+                    <p class="aviso">
+                      <span class="obligatorio"> * </span>Fields required.
+                    </p>          
+                
+              </form>
+        </div>  
+        </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+        <p class="medellin">Medellín, Colombia</p>
+        <p class="david">© David Ávila All Rights Reserved</p>
+        <div class="plays">
+          <a href="https://www.youtube.com/channel/UCyYyjWLi-jR7WW3Opetw8zg" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/plays.png" alt="">
+          </a>  
+      </div>
+      <div class="soundCloud">
+          <a href="https://soundcloud.com/david-paris-197842585" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/soundCloud.png" alt="">
+          </a>  
+      </div>
+        <div class="insta">
+            <a href="https://www.instagram.com/davidparis_ai/" target="_blank" rel="noopener noreferrer"> 
+                <img src="/assets/insta.png" alt="">
+            </a>
+           
+        </div>
+
+    </div>
+
+</footer>
+    
+
+</body>
+</html>
